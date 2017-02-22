@@ -5,9 +5,9 @@ $files = Get-ChildItem $folferPath -File  | ? {($_.Extension -eq '.flac') -or ($
 foreach ($file in $files) {
 
 $regexed = ($file.name -replace '^\d{4}\s','').TrimStart()
-"zmieniam nazwe na: $regexed"
+"zmieniam nazwe na: $regexed tak"
 
-Rename-Item -Path $file.fullName -NewName $regexed -ErrorAction Inquire1
+Rename-Item -Path $file.fullName -NewName $regexed -ErrorAction Inquire
 
 
 
