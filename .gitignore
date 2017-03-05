@@ -1,2 +1,4 @@
 #nie pokazuje zadnego pliku TXT!
 *.txt
+*.*
+!reaname-file.ps1
